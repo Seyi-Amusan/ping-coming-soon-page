@@ -1,0 +1,34 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    //grid-template-rows: 50% 1fr 15%;
+    justify-content: center;
+
+}
+
+header{
+    height: 38vh;
+    margin-top: 10rem;
+
+    display: grid;
+    justify-items: center;
+}
+
+
+
+figure{
+    height: 75vh;
+    img{
+        height: 90%;
+    }
+}
+    
+
+footer{
+
+    &__social-media-links{
+        margin-bottom: 1.5rem;
+    }
+    text-align: center;
+    height: 8rem;
+}
