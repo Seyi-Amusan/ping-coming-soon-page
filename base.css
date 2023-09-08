@@ -8,22 +8,65 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
-  font-family: sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .header form > * {
-  height: 4rem;
   border-radius: 2rem;
   box-shadow: none;
+  font-family: "Libre Franklin", sans-serif;
 }
 .header__input {
-  width: 30rem;
+  width: 33rem;
+  height: 4rem;
 }
 .header__btn {
-  width: 10rem;
+  width: 15rem;
+  height: 4rem;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
   background-color: hsl(223, 87%, 63%);
+  transition: transform 0.2s;
+}
+@media (max-width: 500px) {
+  .header__btn {
+    width: 33rem;
+    margin-top: 1rem;
+  }
+}
+.header__btn:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1px 3px hsla(223, 87%, 63%, 0.5);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  color: hsl(0, 0%, 59%);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+span {
+  font-weight: 700;
+  color: black;
 }
 
 body {
@@ -32,24 +75,57 @@ body {
   justify-content: center;
 }
 
-header {
+.header {
   height: 38vh;
   margin-top: 10rem;
+  margin-bottom: 7rem;
   display: grid;
   justify-items: center;
+  justify-content: center;
+  grid-template-columns: max-content;
+  grid-template-rows: repeat(3, auto) max-content;
+}
+@media (max-width: 500px) {
+  .header form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header__error-msg {
+  color: red;
+  display: none;
+  height: 2rem;
 }
 
 figure {
-  height: 75vh;
+  height: 38rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+@media (max-width: 672px) {
+  figure {
+    height: 33rem;
+  }
+}
+@media (max-width: 566px) {
+  figure {
+    height: 27rem;
+  }
 }
 figure img {
-  height: 90%;
+  height: 100%;
 }
 
-footer {
+.footer {
   text-align: center;
   height: 8rem;
 }
-footer__social-media-links {
-  margin-bottom: 1.5rem;
+.footer__social-media-links > * {
+  margin: 1.5rem 2rem;
+  transition: transform 0.2s;
+}
+.footer__social-media-links > *:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
 }/*# sourceMappingURL=base.css.map */

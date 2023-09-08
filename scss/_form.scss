@@ -1,14 +1,31 @@
 .header{
     form > *{
-        height: 4rem;
         border-radius: 2rem;
         box-shadow: none;
+        font-family: 'Libre Franklin', sans-serif;
     }
     &__input{
-        width: 30rem;
+        width: 33rem;
+        height: 4rem;
     }
     &__btn{
-        width: 10rem;
+        width: 15rem;
+        height: 4rem;
+        border: 0;
+        color: #fff;
+        font-weight: 600;
         background-color: hsl(223, 87%, 63%);
+        transition: transform .2s;
+
+        @media (max-width: 500px) {
+            width: 33rem;
+            margin-top: 1rem;
+        }
+
+        &:hover{
+            cursor: pointer;
+            transform: translateY(-3px);
+            box-shadow: 0 1px 3px hsla(223, 87%, 63%, .5);
+        }
     }
 }

@@ -6,29 +6,65 @@ body{
 
 }
 
-header{
+.header{
     height: 38vh;
     margin-top: 10rem;
+    margin-bottom: 7rem;
 
     display: grid;
     justify-items: center;
+    justify-content: center;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(3, auto) max-content;
+
+    form{
+        @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__error-msg{
+        color: red;
+        display: none;
+        height: 2rem;
+    }
 }
 
 
 
 figure{
-    height: 75vh;
+    height: 38rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    @media (max-width: 672px) {
+            height: 33rem;
+        }
+
+        @media (max-width: 566px) {
+            height: 27rem;
+        }
     img{
-        height: 90%;
+        height: 100%;
     }
 }
     
 
-footer{
+.footer{
 
     &__social-media-links{
-        margin-bottom: 1.5rem;
+
+        & > *{
+            margin: 1.5rem 2rem;
+            transition: transform .2s;
+            &:hover{
+                transform: translateY(-3px);
+                cursor: pointer;
+            }
+        }
     }
+
     text-align: center;
     height: 8rem;
 }

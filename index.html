@@ -6,6 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="base.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;600;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
@@ -16,10 +20,11 @@
 
   <header class="header">
     <img src="images/logo.svg" alt="" class="header__logo">
-    <h1 class="header__heading--primary">We are launching <span>soon</span></h1>
+    <h1 class="header__heading--primary">We are launching <span>soon!</span></h1>
     <h2 class="header__heading--secondary">Subscribe and get notified</h2>
     <form>
       <input type="text" placeholder="Your email address" class="header__input">
+      <p class="header__error-msg">Please proide a valid email address</p>
       <button class="header__btn" type="button">Notify Me</button>
     </form>
   </header>

@@ -7,10 +7,14 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media (max-width: 500px) {
+        font-size: 50%;
+    }
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 @import 'scss/form';
